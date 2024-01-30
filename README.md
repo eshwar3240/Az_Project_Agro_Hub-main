@@ -13,7 +13,7 @@ Transforming Tomorrow with Affordable Tech Solutions Today.
 
 1)  <h6>Eshwar</h6> (Development & Deployment ): Responsibe for Development and Deployment of code. .
 
-2)  <h6>Mohd Aleem</h6> (Documentatio Management): Responsible for managing the documentation process.
+2)  <h6>Mohd Aleem</h6> (Documentation Management): Responsible for managing the documentation process.
 
 3)  <h6>Erindla Krishna</h6> (Content Management): Responsible for Managing the website content.
 
@@ -53,11 +53,11 @@ Azure Chatbot :- The Azure AI Language Chatbot is a cutting-edge conversational 
 <h1>Screenshot’s:</h1>
 <b>Storage account</b>
 <img src="storageaccount.png">
-<b>Static Website</b>
+<b>Static Website.....</b>
 <img src="staticwebsite.png">
-<b>Container</b>
+<b>Container.....</b>
 <img src="container.png">
-<b>Azure Data Protection service.....</b>
+<b>Azure Data Protection service</b>
 <img src="backupofblob.png">
 <b>Azure AI serivce chatbot</b>
 <img src="chatbot.png">
