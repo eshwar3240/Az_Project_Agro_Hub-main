@@ -4,10 +4,10 @@ Transforming Tomorrow with Affordable Tech Solutions Today.
 
 <h1>Project Details</h1>
 
-1.	Project Demo URL:<br>
-2.	Demo Video URL:<br> 
-3.	GitHub Repository URL :<br>
-4.	Industry : E-commerce<br>
+1.	Project Demo URL:https://agrohub1122.z13.web.core.windows.net/<br>
+2.	Demo Video URL:https://youtu.be/nFtwszuQOe8?si=qAjxWjtS8kFUKUi<br> 
+3.	GitHub Repository URL :https://github.com/eshwar3240/Az_Project_Agro_Hub-main/<br>
+4.	Industry : E-commerce (Agriculture)<br>
 
 <h1>Roles & Responsibilities:</h1>
 
