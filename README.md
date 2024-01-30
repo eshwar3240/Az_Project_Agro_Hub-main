@@ -57,7 +57,7 @@ Azure Chatbot :- The Azure AI Language Chatbot is a cutting-edge conversational 
 <img src="staticwebsite.png">
 <b>Container</b>
 <img src="container.png">
-<b>backup and blob</b>
+<b>Azure Data Protection service</b>
 <img src="backupofblob.png">
 <b>Azure AI serivce chatbot</b>
 <img src="chatbot.png">
@@ -69,6 +69,8 @@ Azure Chatbot :- The Azure AI Language Chatbot is a cutting-edge conversational 
 Here I am attaching the final working website's screenshot for the reference.
 
 <h1>Working Live Project Display:</h1>
+<img src="website1.png">
+<img src="website2.png">
 
 <h1>Final Project Statement:</h1>
 
