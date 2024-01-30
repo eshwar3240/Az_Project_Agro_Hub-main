@@ -11,13 +11,15 @@ Transforming Tomorrow with Affordable Tech Solutions Today.
 
 <h1>Roles & Responsibilities:</h1>
 
-1) <h6>Erindla Krishna</h6> (Project Management): Manages the web development project.
+1)  <h6>Eshwar</h6> (Development & Deployment ): Responsibe for Development and Deployment of code. .
 
-2) <h6>Mohd Aleem</h6> (Content Management): Responsible for managing the website content.
+2)  <h6>Mohd Aleem</h6> (Documentatio Management): Responsible for managing the documentation process.
 
-3) <h6>Rangu Gayathri</h6> (Documentation management): Responsible for managing the documentation process.
+3)  <h6>Erindla Krishna</h6> (Content Management): Responsible for Managing the website content.
 
-4) <h6>Eshwar</h6> (Deployment management): Deployment and maintenance of project infrastructure.
+4)  <h6>Rangu Gayathri</h6> (Project management): Responsible for managing the project description.
+
+
 
 <h1>Azure services used:</h1>
 
