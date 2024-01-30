@@ -1,0 +1,189 @@
+.bg-black {
+    background-color: rgb(237, 250, 249);
+    color: #090707;
+}
+
+.equipment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equipment-row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between items */
+    flex-wrap: wrap;
+}
+
+.equipment-item {
+    flex: 0 0 calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    padding: 20px; /* Adjust padding for each item */
+    background-color: #fff; /* White background for each equipment item */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.equipment-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Add space between image and text */
+}
+
+.cost {
+    margin-top: 10px; /* Add space between description and cost */
+    font-weight: bold;
+    color: #4CAF50; /* Green color for the cost */
+}
+
+.bg-color {
+    background-color: white;
+}
+
+section {
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.bg-color {
+    background-color: black;
+}
+
+.equipment-section h2 {
+    color: white;
+}
+
+/* Additional styling for maintaining position */
+.equipment-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s; /* Add smooth transition effect */
+}
+
+.equipment-details h3 {
+    margin-top: 0;
+}
+
+.equipment-details .cost {
+    margin-bottom: 0;
+}
+
+.equipment-details .btn-info {
+    margin-top: 10px;
+}
+
+/* Apply a hover effect to highlight the equipment item */
+.equipment-item:hover .equipment-details {
+    transform: translateY(-100%);
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 5px;
+    max-height: 250px;
+    border-radius: 15px; /* Add border-radius for rounded corners */
+}
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 5px;
+    max-height: 250px;
+    border-radius: 8px;
+    border: 2px solid black; /* Add border with black color */
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-row {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between items */
+    flex-wrap: wrap;
+}
+
+.product-item {
+    flex: 0 0 calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    padding: 20px; /* Adjust padding for each item */
+    background-color: #fff; /* White background for each product item */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Add space between image and text */
+}
+
+.cost {
+    margin-top: 10px; /* Add space between description and cost */
+    font-weight: bold;
+    color: #4CAF50; /* Green color for the cost */
+}
+
+.section {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.product-section h2 {
+    color: #000; /* Black color for the section header */
+}
+
+/* Additional styling for maintaining position */
+.product-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s; /* Add smooth transition effect */
+}
+
+.product-details h3 {
+    margin-top: 0;
+}
+
+.product-details .cost {
+    margin-bottom: 0;
+}
+
+.product-details .btn-info {
+    margin-top: 10px;
+}
+
+/* Apply a hover effect to highlight the product item */
+.product-item:hover .product-details {
+    transform: translateY(-100%);
+}
+.product-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow on hover */
+}

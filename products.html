@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Rental</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+ 
+<style>
+        
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.rent-section {
+    padding: 40px 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-row {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.product-item {
+    flex: 0 0 calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #fcf6f6; /* Background color for product items */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.cost {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.buy-now-btn {
+    display: block;
+    margin: 20px auto;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #008080;">
+        <a class="navbar-brand" href="#">Agro Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="products.html">products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seeds.html">seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rent.html">Rent Equipment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>               
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html">Chatbot</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   <section class="rent-section bg-black">
+        <div class="container">
+
+            <h2 class="text-center mb-7 bg-black">Products</h2>
+            <p class="text-center">Explore our range of products available for purchase. Click "Buy Now" to make a purchase.</p>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                
+                <!-- Product Row 1 -->
+                <div class="product-row row">
+                    <!-- Product Item 1 -->
+                    
+                    <div class="product-item col-md-4">
+                        <img src="urea-n46.jpg" alt="Tractor">
+                        <h3>Urea</h3>
+                        <p>Urea is a commonly used nitrogen fertilizer in farming, promoting crop growth and enhancing yield by providing essential nitrogen nutrients to plants.</p>
+                        &nbsp;
+                        <p class="cost">Cost:  ₹ 500</p>
+                      
+                        <a href="buynow.html?productCost=500" onclick="buyNow('backhotractor', 500)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+
+                    <!-- Product Item 2 -->
+                    <div class="product-item col-md-4">
+                        <img src="mop.jpeg" alt="Excavator">
+                        <br>
+                        
+                        <h3>Muriate of Potash 50kgs pack</h3>
+                        <br>
+                        <p>Muriate of Potash (MOP) is a potassium-containing fertilizer widely used in agriculture to enhance plant growth and improve crop yields.</p>
+                        <br>
+                        &nbsp;
+                        
+                        <p class="cost">Cost:  ₹ 300</p>
+                        <a href="buynow.html?productCost=300" onclick="buyNow('backhoexcavator', 300)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+
+                    <!-- Product Item 3 -->
+                    <div class="product-item col-md-4">
+                        <img src="vamc.jpeg" alt="Bulldozer">
+                        <h3>VAM C (Chlormequat chloride 50% SL)</h3>
+                        <p> VAM-C chlormequat Chloride 50% SL is a plant growth regulator, which normally induces retardation of shoot elongation and vegetative growth in most crops.</p>
+                        <p class="cost">Cost: ₹ 1000</p>
+                        <a href="buynow.html?productCost=1000" onclick="buyNow('bulldozer', 1000)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Row 2 -->
+                various liquid pesticides
+                
+                <div class="product-row row">
+                    <!-- Product Item 4 -->
+                    <div class="product-item col-md-4">
+                        <img src="flower booster.jpg" alt="Backhoe">
+                        <br>
+                        <br>
+                        &nbsp;
+                        <h3>Flower booster</h3>
+                        <p>A flower booster in farming is a specialized fertilizer or supplement designed to enhance flowering and promote the development of healthy and abundant blooms in plants.</p>
+                        <p class="cost">Cost: ₹ 500</p>
+                        <a href="buynow.html?productCost=500" onclick="buyNow('backhoe', 500)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+
+                    <!-- Product Item 5 -->
+                    <div class="product-item col-md-4">
+                        <img src="ual.JPG" alt="Harvester">
+                        <h3>UAL XYMO BIOTONIQ -L</h3>
+                        <p>A plant enhancer is a product designed to improve overall plant health, growth, and productivity by providing essential nutrients and promoting beneficial physiological processes.</p>
+                        <p class="cost">Cost: ₹ 400</p>
+                        <a href="buynow.html?productCost=400" onclick="buyNow('Harvester', 400)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+
+                    <!-- Product Item 6 -->
+                    <div class="product-item col-md-4">
+                        <img src="samras.JPG" alt="Plow">
+                        <h3>Samras(Biostimulant)</h3>
+                        <br>
+                        <p>Multiplex Samras enhances the uptake of major, secondary and micronutrients by acting as a natural chelating agent, 
+                            thus, improves flower and fruit setting and enhances drought resistance in plants.</p>
+                        <p class="cost">Cost: ₹ 600</p>
+                        <a href="buynow.html?productCost=600" onclick="buyNow('plow', 600)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Row 3 -->
+                <!-- Additional Product Items 7, 8, 9 -->
+                <div class="product-row row">
+                    <!-- Product Item 7 -->
+                    <div class="product-item col-md-4">
+                        <br>
+
+                        <img src="equvinox.JPG" alt="Item 7">
+                        <br>
+                        <h3>EQUVINOX SPRAY LIQUID pH BALANCER</h3>
+                        <br>
+                        <p>
+                            A pH balancer spray is designed to adjust and maintain the optimal pH levels in soil, promoting better nutrient availability for plants.</p>
+                        <p class="cost">Cost: ₹ 750</p>
+                        <a href="buynow.html?productCost=750" onclick="buyNow('Item-7', 750)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+
+                    <!-- Product Item 8 -->
+                    <div class="product-item col-md-4">
+                        <img src="bio insecticides.JPG" alt="Item 8">
+                        <br>
+                        <h3>ALBATA ROYAL CLEAR MITE BIO INSECTICIDE (PLANT EXTRACT)</h3>
+                        
+                        <p>Royal Clear Mite is 100% Plant derived solution, Non-Hazardous and biodegradable solution, disrupts breathing of Spider mites, Prevents Spider mites laid eggs from hatching.</p>
+                        <p class="cost">Cost: ₹ 850</p>
+                        <a href="buynow.html?productCost=850" onclick="buyNow('Item-8', 850)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+
+                    <!-- Product Item 9 -->
+                    <div class="product-item col-md-7">
+                        <img src="fruit enhancer.JPG" alt="Item 9">
+                        <h3>VEDAGNA ENHANCER (FRUIT SIZE AND COLOUR ENHANCER)</h3>
+                        <p>A fruit enhancer is a product designed to boost fruit development in plants by providing essential nutrients and promoting optimal conditions for flowering and fruiting.</p>
+                        <p class="cost">Cost: ₹ 950</p>
+                        <a href="buynow.html?productCost=950" onclick="buyNow('Item-9', 950)" class="btn btn-primary buy-now-btn">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Add more rows and items as needed -->
+
+            </div>
+        </div>
+
+        <script>
+            // Placeholder function for handling "Buy Now" button click
+            function buyNow(product, cost) {
+                // You can add your logic here for handling the buy now functionality
+                // For example, redirect to buynow.html with product information
+                window.location.href = `buynow.html?product=${product}&productCost=${cost}`;
+            }
+        </script>
+    </section>
+
+    
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+</body>
+</html>

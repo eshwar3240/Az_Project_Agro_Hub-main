@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Equipment - Farmer Rental</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Add your custom styles here */
+        .bg-black {
+            background-color:black;
+            color: #0c0c0c;
+        }
+    
+        .equipment-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        .equipment-row {
+            width: 100%;
+            padding-bottom: 20px; /* Add padding instead of margin-bottom */
+        }
+    
+        .equipment-item {
+            flex: 0 0 calc(33.33% - 20px);
+            box-sizing: border-box;
+            margin-right: 20px;
+            /* Remove margin-bottom */
+            padding-bottom: 20px; /* Add padding instead of margin-bottom */
+        }
+    
+        .equipment-item img {
+            width: 200px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
+            object-fit: cover; /* Maintain aspect ratio and cover the specified dimensions */
+            margin-bottom: 2px; /* Add space between image and text */
+        }
+    
+        .cost {
+            margin-top: 10px; /* Add space between description and cost */
+        }
+    
+        .bg-color {
+            background-color: white;
+        }
+    
+        section {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    
+        .bg-color{
+            background-color: black;
+        }
+    
+        .equipment-section h2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #008080;">
+        <a class="navbar-brand" href="#">Agro Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>               
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seeds.html">seeds</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="rent.html">Rent Equipment <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html">Chatbot</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Equipment Grid -->
+    <section class="rent-section bg-black">
+        <div class="container">
+
+            <h2 class="text-center mb-4  bg-black">Rent Equipment</h2>
+            <p class="text-center">Explore our range of equipment available for rent. Contact us for more details.</p>
+
+            <!-- Equipment Grid -->
+            <div class="equipment-grid">
+                <!-- Equipment Row 1 -->
+                <div class="equipment-row row">
+                    <!-- Equipment Item 1 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="tractor2.png"alt="Tractor">
+                        <br>
+                        <br>
+                        <h3>Tractor</h3>
+                        <p class="cost">Cost per day: ₹ 2000</p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+
+                    <!-- Equipment Item 2 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="rotavator-torary-tiller.jpeg" alt="Excavator">
+                        <br>
+                        <br>
+                        <h3>Excavator</h3>
+                        
+                        <p class="cost">Cost per day: ₹ 1500</p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+
+                    <!-- Equipment Item 3 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="mounted-mould-board-plough.jpeg" alt="Bulldozer">
+                        <br>
+                        <br>
+                        <h3>Plough</h3>
+                        
+                        <p class="cost">Cost per day: ₹ 1000</p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Equipment Row 2 -->
+                <div class="equipment-row row">
+                    <!-- Equipment Item 4 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="ground driller.jpg" alt="Backhoe">
+                        <h3>Ground driller</h3>
+                        <p class="cost">Cost per day: ₹ 500</p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+
+                    <!-- Equipment Item 5 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="Mahindra-Thresher.jpg" alt="Harvester">
+                        <h3>Harvester</h3>
+                        <p class="cost">Cost per day: ₹ 650</p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+
+                    <!-- Equipment Item 6 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="disk harrow.jpg" alt="Plow">
+                        <h3>Disk Harrow</h3>
+                        <p class="cost">Cost per day: ₹ 550</p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Equipment Row 3 -->
+                <!-- Additional Equipment Items 7, 8, 9 -->
+                <div class="equipment-row row">
+                    <!-- Equipment Item 7 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="round-baler.jpeg" alt="Item 7">
+                        <br>
+                        <br>
+                        <h3>Round Baler</h3>
+                        <p class="cost">Cost per day: ₹ 499 </p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+
+                    <!-- Equipment Item 8 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="trailer.jpg" alt="Item 8">
+                        <br>
+                        <br>
+                        <h3>Trailer</h3>
+                        
+                        <p class="cost">Cost per day: ₹ 599</p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+
+                    <!-- Equipment Item 9 -->
+                    <div class="equipment-item col-md-4">
+                        <img src="bulldozer.jpeg" alt="Item 9">
+                        <br>
+                        <br>
+                        <h3>Bull dozer</h3>
+                        
+                        <p class="cost">Cost per day: ₹ 999</p>
+                        <a href="booking.html" class="btn btn-primary book-now-btn">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Add more rows and items as needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Additional JavaScript for the Rent Equipment page -->
+    <!-- Add your custom scripts here -->
+
+</body>
+</html>

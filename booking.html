@@ -1,0 +1,136 @@
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .booking-section {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #008080;">
+        <a class="navbar-brand" href="index.html">Agro Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rent.html">Rent Equipment</a>
+                </li>               
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html">Chatbot</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Booking Form Section -->
+<section class="booking-section">
+    <div class="container">
+        <h2 class="text-center mb-4 bg-white text-dark">Booking Form</h2>
+        <form id="bookingForm">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name"  required>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">+91</span>
+                    </div>
+                    <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" oninput="restrictAlphabets()" maxlength="10" placeholder="XXXXXXXXXX" required>
+                </div>
+            </div>
+
+            <!-- JavaScript to restrict alphabets and limit length in the phone number -->
+            <script>
+                function restrictAlphabets() {
+                    var phoneInput = document.getElementById('phone');
+                    phoneInput.value = phoneInput.value.replace(/[^0-9]/g, '');
+
+                    // Limit length to 10 digits
+                    if (phoneInput.value.length > 10) {
+                        phoneInput.value = phoneInput.value.slice(0, 10);
+                    }
+                }
+            </script>
+
+            <!-- Date of Booking -->
+            <div class="form-group">
+                <label for="bookingDate">Date of Booking:</label>
+                <input type="date" class="form-control" id="bookingDate" name="bookingDate" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- JavaScript for form submission -->
+<script>
+    function submitForm() {
+        // Get the form element
+        var form = document.getElementById('bookingForm');
+
+        // Check if all form fields are valid
+        if (form.checkValidity()) {
+            // Display an alert if the form is valid
+            alert('Your details have been submitted successfully. Thanks for choosing us!');
+            // You can also reset the form after submission if needed
+            form.reset();
+        } else {
+            // If the form is not valid, trigger the browser's default validation
+            form.reportValidity();
+        }
+    }
+</script>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

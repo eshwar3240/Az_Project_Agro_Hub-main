@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeds</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #008080;">
+        <a class="navbar-brand" href="#">Agro Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>               
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">products</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="seeds.html">seeds</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="rent.html">Rent Equipment <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html">Chatbot</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<!-- Product Section -->
+<section></section>
+    <section class="rent-section bg-black">
+        <div class="container">
+            <h2 class="text-center mb-4 bg-black">Latest Products</h2>
+            <p class="text-center mb-4 bg-black">Explore our range of products available for purchase. Contact us for more details.</p>
+
+            <!-- Product Grid -->
+            <div class="product-grid ">
+                <!-- Product Row 1 -->
+                <div class="product-row row bg-black">
+                    <!-- Product Item - Drone -->
+                    <div class="product-item col-md-4">
+                        <img src="paddy.jpg" alt="paddy">
+                        <h3>paddy seeds pack</h3>
+                        
+                        <p>High-quality paddy seeds for optimal yield and crop performance.</p>
+                        <p class="cost">Cost: ₹ 100</p>
+                        
+                        <a href="buynow.html?productCost=100" onclick="buyNow('paddy')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                
+                    <!-- Product Item - Harvester -->
+                    <div class="product-item col-md-4">
+                        <img src="cotton seeds.jpg" alt="Harvester">
+                        <h3>cotton seeds</h3>
+                        <br>
+                        <p>
+                            Premium cotton seeds for superior yield and optimal crop performance.</p>
+                        <p class="cost">Cost: ₹ 100</p>
+                        
+                        <a href="buynow.html?productCost=100" onclick="buyNow('harvester')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                
+                    <!-- Product Item - Cotton Harvester -->
+                    <div class="product-item col-md-4">
+                        <img src="tomato.jpg" alt="Cotton Harvester"><br>
+                       
+                       <br>
+                        <h3>tomato seeds</h3>
+                        <p>Top-tier tomato seeds for exceptional yield and optimal crop performance.</p>
+                        <p class="cost">Cost:  ₹ 400</p>
+                       
+                        <a href="buynow.html?productCost=400" onclick="buyNow('cotton-harvester')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-row row bg-black">
+                    <!-- Product Item - Drone -->
+                    <div class="product-item col-md-4">
+                        <img src="moong.jpg" alt="moong">
+                        <h3>Moong Seeds</h3>
+                        
+                        <p>
+                            Exceptional moong seeds crafted for superior yield and optimal crop performance.</p>
+                        <p class="cost">Cost: 100</p>
+                        
+                        <a href="buynow.html?productCost=100" onclick="buyNow('paddy')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                
+                    <!-- Product Item - Harvester -->
+                    <div class="product-item col-md-4">
+                        <img src="jower.jpg" alt="jower">
+                        <h3>Jower seeds</h3>
+                        <br>
+                        <p>
+                            Superior jowar seeds designed for high yield and optimal crop performance.</p>
+                        <p class="cost">Cost:  ₹ 500</p>
+                        
+                        <a href="buynow.html?productCost=500" onclick="buyNow('harvester')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                
+                    <!-- Product Item - Cotton Harvester -->
+                    <div class="product-item col-md-4">
+                        <img src="bajra seeds.jpg" alt="bajra"><br>
+                       
+                       <br>
+                        <h3>bajra seeds</h3>
+                        <p>Explore our online collection of top-grade bajra seeds, ensuring superior yield .</p>
+                        <p class="cost">Cost: ₹ 200</p>
+                       
+                        <a href="buynow.html?productCost=400" onclick="buyNow('cotton-harvester')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+        <script>
+            // Placeholder function for handling "Buy Now" button click
+            function buyNow(product) {
+                // You can add your logic here for handling the buy now functionality
+                // For example, redirect to buynow.html with product information
+                window.location.href = `buynow.html?product=${product}`;
+            }
+        </script>
+
+</section>
+
+
+   
+
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

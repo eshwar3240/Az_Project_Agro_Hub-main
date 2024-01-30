@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Farmer Rental</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Add your custom styles for the Contact page here */
+        .contact-section {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #008080;">
+        <a class="navbar-brand" href="#">Agro Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seeds.html">seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rent.html">Rent Equipment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>               
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html">Chatbot</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            
+            <!-- Contact Form -->
+            <form class="contact-form" onsubmit="showAlert(); return false;">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Additional JavaScript for the Contact page -->
+    <script>
+        function showAlert() {
+            alert('Thanks for contacting us!');
+        }
+    </script>
+    <footer>     
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Address and Map Section -->
+    <section class="address-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Location</h2>
+
+            <!-- Address Section -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Visit Us</h4>
+                    <p>shobana colony, balanagar, hyderabad,India</p>
+                    <h4>Contact No:+91 7095812408</h4>
+                </div>
+
+                <!-- Google Map Section -->
+                <div class="col-md-6">
+                    <div class="map-container">
+                        <div class="map-responsive">
+                            <!-- Embed your Google Map iframe here -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144800.41484488352!2d78.28647370544314!3d17.504306225325934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb911f6612aabd%3A0xf1c8e23814ea9953!2sMagic%20bus%20India%20foundation%20Azure%20Free%20Training%20%26%20Certification%2C!5e0!3m2!1sen!2sin!4v1704709471135!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Icons Section -->
+    <div class="contact-icons">
+        <a href="https://wa.me/1234567890" target="_blank">eshwar<i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:your.email@example.com" target="_blank">krishna<i class="far fa-envelope"></i></a>
+        <a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

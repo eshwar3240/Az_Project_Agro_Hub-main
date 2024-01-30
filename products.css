@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.rent-section {
+    padding: 40px 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   background:white;
+}
+
+.product-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cost {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.buy-now-btn {
+    display: block;
+    margin: 20px auto;
+}

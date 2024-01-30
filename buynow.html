@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="products.css">
+    <style>
+        /* Add any additional styles as needed */
+        .quantity-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .quantity-btn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #008080;">
+        <a class="navbar-brand" href="#">Agro Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seeds.html">seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rent.html">Rent Equipment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html">Chatbot</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <h2 class="mb-4"><center>Buy Now</center></h2>
+    
+        <form id="buyNowForm" class="mx-auto" style="max-width: 400px;">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required >
+            </div>
+    
+            <div class="form-group"> 
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" pattern="\+91\d{10}" placeholder="+91xxxxxxxxxx" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="cost">Product Cost:</label>
+                <!-- Input field for product cost -->
+                <input type="text" class="form-control" id="cost" name="cost" readonly>
+            </div>
+            <div class="quantity-container">
+                <div class="div">
+                    <label for="quantity">Quantity of Products:</label>
+                </div>
+            <button class="btn btn-outline-secondary quantity-btn" onclick="decrementQuantity()">-</button>
+                <input type="text" class="form-control quantity-input" id="quantity" value="1" readonly>
+                <button class="btn btn-outline-secondary quantity-btn" onclick="incrementQuantity()">+</button>
+            </div>
+    
+            <div class="form-check">
+            <input type="radio" class="form-check-input" id="cod" name="paymentOption" value="cod">
+            <label class="form-check-label" for="cod">Cash on Delivery</label>
+        </div>
+        <script>
+            function incrementQuantity() {
+                var quantityInput = document.getElementById('quantity');
+                var currentQuantity = parseInt(quantityInput.value, 10);
+                quantityInput.value = currentQuantity + 1;
+            }
+    
+            function decrementQuantity() {
+                var quantityInput = document.getElementById('quantity');
+                var currentQuantity = parseInt(quantityInput.value, 10);
+                
+                // Ensure quantity does not go below 1
+                if (currentQuantity > 1) {
+                    quantityInput.value = currentQuantity - 1;
+                }
+            }
+        </script>
+    
+       
+    
+
+        <button type="button" class="btn btn-primary" onclick="validateAndSubmit()">Submit</button>
+    </form>
+    </div>
+    
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        function validateAndSubmit() {
+            // Get form values
+            var name = document.getElementById('name').value;
+            var address = document.getElementById('address').value;
+            var phone = document.getElementById('phone').value;
+        
+            // Validate if all fields are filled
+            if (name.trim() === "" || address.trim() === "" || phone.trim() === "") {
+                alert("Please fill out all the mandatory fields.");
+                return;
+            }
+        
+            // Get the selected payment option
+            var paymentOption = document.querySelector('input[name="paymentOption"]:checked');
+        
+            // Check if a payment option is selected
+            if (!paymentOption) {
+                alert("Please select a payment option.");
+                return;
+            }
+        
+            // Display alert
+            alert("Thanks for shopping, " + name + "!\nYour product will be delivered soon.");
+        
+            // Check the selected payment option
+            if (paymentOption.value === "cod") {
+                handleCashOnDelivery();
+            } else if (paymentOption.value === "redirectPayment") {
+                handleRedirectToPayment();
+            }
+        }
+        
+        function handleCashOnDelivery() {
+            alert("Cash on Delivery selected. You will pay upon product delivery.");
+            // You can add specific logic related to Cash on Delivery here
+        }
+        
+        function handleRedirectToPayment() {
+            window.location.href = "payment.html";
+            // You can add specific logic related to redirecting to payment here
+            // For example, you might want to navigate to a payment page
+        }
+          // Function to set the product cost from the URL parameter
+        function setProductCost() {
+        // Get the URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+
+        // Get the productCost parameter value
+            const productCost = urlParams.get('productCost');
+
+        // Set the product cost in the form field
+            document.getElementById('cost').value = productCost || '100'; // Default to '100' if no parameter is provided
+        }
+
+        // Call the setProductCost function when the page is loaded
+            window.onload = setProductCost;    
+        </script>
+        
+        
+</body>
+</html>

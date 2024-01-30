@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>AGRO HUB</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #008080;">
+        <a class="navbar-brand" href="#">Agro Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seeds.html">seeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rent.html">Rent Equipment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">                    
+                <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chatbot.html">Chatbot</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Image Scroll Container -->
+    <div class="image-scroll-container">
+        <div class="image-wrapper" id="imageWrapper">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="digrow.jpg" alt="Image 3">
+            <img src="tractors.jpg" alt="Image 4">
+            <img src="background.avif" alt="Image 5">
+            <img src="vamc.jpeg" alt="Image 6">
+            <img src="tomato.jpg" alt="Image 7">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+<section></section>
+    <section class="rent-section bg-black">
+        <div class="container">
+            <h2 class="text-center mb-4 bg-black">Latest Products</h2>
+            <p class="text-center mb-4 bg-black">Explore our range of products available for purchase. Contact us for more details.</p>
+
+            <!-- Product Grid -->
+            <div class="product-grid ">
+                <!-- Product Row 1 -->
+                <div class="product-row row bg-black">
+                    <!-- Product Item - Drone -->
+                    <div class="product-item col-md-4">
+                        <img src="digrow.jpg" alt="Drone">
+                        <br>
+                        <br>
+                        <h3>DI grow organic fertilizers pack</h3>
+                        
+                        <p></p>
+                        <p class="cost">Cost: <strike>₹ 2000</strike> ₹ 800</p>
+                        
+                        <a href="buynow.html?productCost=800" onclick="buyNow('drone')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                
+                    <!-- Product Item - Harvester -->
+                    <div class="product-item col-md-4">
+                        <img src="micro-nutrient-mixture-fertilizers.jpg" alt="Harvester">
+                        <h3>Micro nutrient mixture fertilizers</h3>
+                        <p></p>
+                        <p class="cost">Cost: <strike>₹ 3000</strike> ₹ 1000</p>
+                        
+                        <a href="buynow.html?productCost=1000" onclick="buyNow('harvester')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                
+                    <!-- Product Item - Cotton Harvester -->
+                    <div class="product-item col-md-4">
+                        <img src="10.jpg" alt="Cotton Harvester"><br>
+                        &nbsp;<br>
+                        <br>
+                        <br>
+                        <h3>Agricultural Insecticides pack</h3>
+                        <p></p>
+                        <p class="cost">Cost: <strike>₹ 1000</strike> ₹ 400</p>
+                       
+                        <a href="buynow.html?productCost=400" onclick="buyNow('cotton-harvester')" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <script>
+            // Placeholder function for handling "Buy Now" button click
+            function buyNow(product) {
+                // You can add your logic here for handling the buy now functionality
+                // For example, redirect to buynow.html with product information
+                window.location.href = `buynow.html?product=${product}`;
+            }
+        </script>
+
+</section>
+
+    <!-- Rent Equipment Section -->
+    <section class="rent-section bg-black">
+        <div class="container">
+            <h2 class="text-center mb-4 bg-black">Latest Equipment</h2>
+            <p class="text-center mb-4 bg-black">Explore our range of equipment available for rent. Contact us for more details.</p>
+            <!-- Equipment Grid -->
+            <div class="equipment-grid">
+                <!-- Equipment Row 1 -->
+                <div class="equipment-row row">
+                   <!-- Equipment Item - Drone -->
+                    <div class="equipment-item col-md-4">
+                    <img src="drone.jpg" alt="Drone">
+                    <h3>DRONE</h3>
+                    <p></p>
+                    <p class="cost">Cost per day: <strike>₹ 10000</strike> ₹ 5000</p>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#droneModal">Info</button>
+                    <a href="booking.html?equipment=drone" class="btn btn-primary">Book Now</a>
+                    </div>
+
+                <!-- Drone Modal -->
+                <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="droneModalLabel">DRONE INFORMATION</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Drones used in agriculture, also known as UAVs (Unmanned Aerial Vehicles), provide farmers with a cost-effective and efficient means of crop monitoring, field mapping, and precision agriculture by capturing real-time aerial data for better decision-making.</p>
+                                <p>Cost per day: ₹ 5000</p>
+                <!-- Add additional information here -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- Equipment Item - Harvester -->
+                <div class="equipment-item col-md-4">
+                    <img src="automatic agriculture harvester.jpg" alt="Harvester">
+                    <h3>HARVESTER</h3>
+                    <p></p>
+                    <p class="cost">Cost per day: <strike>₹ 5000</strike> ₹ 2000</p>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#harvesterModal">Info</button>
+                    <a href="booking.html?equipment=harvester" class="btn btn-primary">Book Now</a>
+                    </div>
+
+                    <!-- Harvester Modal -->
+                    <div class="modal fade" id="harvesterModal" tabindex="-1" role="dialog" aria-labelledby="harvesterModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="harvesterModalLabel">Harvester Information</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                 </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Agricultural combine harvesters streamline crop harvesting by efficiently cutting, threshing, and cleaning grains in a single machine, enhancing overall productivity.</p>
+                                    <p>Cost per day: <strike>₹ 5000</strike> ₹ 2000</p>
+                                    <!-- Add additional information here -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             </div>
+                         </div>
+                        </div>
+                    </div>
+            <!-- equipment item 3-->
+                <!-- Equipment Item - Cotton Harvester -->
+                    <div class="equipment-item col-md-4">
+                        <img src="7760.jpg" alt="Cotton Harvester"><br>
+                        &nbsp;<br>
+                        <h3>COTTON HARVESTER</h3>
+                        <p></p>
+                        <p class="cost">Cost per day: <STRIKE>₹ 10000</STRIKE> ₹ 3000</p >
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#cottonHarvesterModal">Info</button>
+                        <a href="booking.html?equipment=cotton-harvester" class="btn btn-primary">Book Now</a>
+                    </div>
+
+                    <!-- Cotton Harvester Modal -->
+                    <div class="modal fade" id="cottonHarvesterModal" tabindex="-1" role="dialog" aria-labelledby="cottonHarvesterModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="cottonHarvesterModalLabel">Cotton Harvester Information</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>A cotton harvester is a mechanical agricultural machine designed to efficiently and autonomously harvest cotton crops, streamlining the harvesting process in the textile industry.
+                                    </p>
+                                    <p>Cost per day: ₹ 3000</p>
+                                    <!-- Add additional information here -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             </div>
+                         </div>
+                        </div>
+                    </div>
+                
+                </div>
+             </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Equipment Section -->
+   
+
+<!-- Available Equipment Section -->
+<section class="equipment-section bg-color">
+    <div class="container">
+
+        <h2 class="text-center mb-4">More Equipment</h2>
+
+        <!-- Equipment Grid -->
+        <div class="equipment-grid">
+            <!-- Equipment Row 1 -->
+            <div class="equipment-row row">
+                <!-- Seeder - Equipment Item 4 -->
+                <div class="equipment-item col-md-4">
+                    <br>
+                    <img src="planter.jpg" alt="Seeder">
+                    <h3>SEEDER</h3>
+                    <p class="cost">Cost per day: ₹ 5000</p>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#seederModal">Info</button>
+                    <a href="booking.html?equipment=seeder" class="btn btn-primary">Book Now</a>
+                </div>
+
+                <!-- Seeder Modal -->
+                <div class="modal fade" id="seederModal" tabindex="-1" role="dialog" aria-labelledby="seederModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="seederModalLabel">Seeder</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>A seeder in farming is a mechanized agricultural implement designed for efficient planting of seeds, distributing them evenly across a field to enhance crop cultivation.</p>
+                                <p>Cost per day: ₹ 5000</p>
+                                <!-- Add additional information here -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grass Cutter - Equipment Item 5 -->
+                <div class="equipment-item col-md-4">
+                    <img src="grass cutter.jpg" alt="Grass Cutter">
+                    <br><br>
+                    <h3>GRASS CUTTER</h3>
+                    <p class="cost">Cost per day: ₹ 1000</p>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#grassCutterModal">Info</button>
+                    <a href="booking.html?equipment=grass_cutter" class="btn btn-primary">Book Now</a>
+                </div>
+
+                <!-- Grass Cutter Modal -->
+                <div class="modal fade" id="grassCutterModal" tabindex="-1" role="dialog" aria-labelledby="grassCutterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="grassCutterModalLabel">Grass Cutter</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Grass cutters in farming are motorized machines designed for efficient and uniform cutting of grass and vegetation, aiding in maintaining fields, pastures, and landscapes.</p>
+                                <p>Cost per day: ₹ 1000</p>
+                                <!-- Add additional information here -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Two Wheel Tractor - Equipment Item 6 -->
+                <div class="equipment-item col-md-4">
+                    <img src="two wheeler tractor.jpg" alt="Two Wheel Tractor">
+                    <h3>TWO WHEEL TRACTOR</h3>
+                    <p class="cost">Cost per day: ₹ 2000</p>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#twoWheelTractorModal">Info</button>
+                    <a href="booking.html?equipment=two_wheel_tractor" class="btn btn-primary">Book Now</a>
+                </div>
+
+                <!-- Two Wheel Tractor Modal -->
+                <div class="modal fade" id="twoWheelTractorModal" tabindex="-1" role="dialog" aria-labelledby="twoWheelTractorModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="twoWheelTractorModalLabel">Two Wheel Tractor</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Two-wheel tractors in farming are versatile and compact motorized vehicles equipped with various implements, providing farmers with a flexible and efficient means for plowing, planting, and cultivating small to medium-sized fields.</p>
+                                <p>Cost per day: ₹ 2000</p>
+                                <!-- Add additional information here -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Similar structure for other available equipment items (Available Excavator, Available Bulldozer) -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for automatic image scrolling -->
+    <script src="script.js"></script>
+
+</body>
+</html>
