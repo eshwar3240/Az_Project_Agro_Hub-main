@@ -59,7 +59,7 @@ Azure Chatbot :- The Azure AI Language Chatbot is a cutting-edge conversational 
 <img src="container.png">
 <b>Azure Data Protection service.....</b>
 <img src="backupofblob.png">
-<b>Azure AI serivce chatbot.....</b>
+<b>Azure AI serivce chatbot</b>
 <img src="chatbot.png">
 <b>Chatbot Test.....</b>
 <img src="chatbottest.png">
