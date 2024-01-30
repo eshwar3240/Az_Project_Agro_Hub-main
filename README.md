@@ -50,18 +50,18 @@ Azure Storage Account:- Azure Storage Account is a foundational component in Mic
 
 Azure Chatbot :- The Azure AI Language Chatbot is a cutting-edge conversational agent powered by Microsoft's Azure platform. Leveraging advanced natural language processing capabilities, it facilitates dynamic and context-aware interactions. This intelligent chatbot employs machine learning algorithms to comprehend user queries, providing personalized responses and assistance across diverse domains. Seamlessly integrating with Azure services, it ensures scalability and reliability.
 
-<h1>Screenshot’s:</h1>
-<b>Storage account</b>
+<h1>Screenshot’s:.....</h1>
+<b>Storage account.....</b>
 <img src="storageaccount.png">
 <b>Static Website</b>
 <img src="staticwebsite.png">
-<b>Container</b>
+<b>Container.....</b>
 <img src="container.png">
-<b>Azure Data Protection service</b>
+<b>Azure Data Protection service.....</b>
 <img src="backupofblob.png">
-<b>Azure AI serivce chatbot</b>
+<b>Azure AI serivce chatbot.....</b>
 <img src="chatbot.png">
-<b>Chatbot Test</b>
+<b>Chatbot Test.....</b>
 <img src="chatbottest.png">
 
 <h1>Description</h1>
